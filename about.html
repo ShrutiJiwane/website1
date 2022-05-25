@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Interface using html & css.</title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  
+   <body>
+      <nav class="nav nav_top">
+         <div class="logo">
+            <a href="index.html"><img src="hotellogo.png" width="200"></a>
+         </div>
+         <div class="nav_side">
+            <a href="about.html" > About Us</a>
+            <a href="service.html"> Services </a>
+            <a href="blog.html"> Blogs</a>
+            <a href="contact.html">Contact us</a>
+            <a href="#"> Login/Sign Up</a>
+         </div>
+      </nav>
+      <hr>
+      <div class="about_us">
+        <h2>About Us</h2>
+        <div class="about_content">
+            <p>kjwe kij3rkm,.23u poi3oi4kr 2985lm tgoklcm, c;dlt-0y,5 o8wugbrk,mdc[2o, ṭflikwn c dlkn4w ;ham 059 u5 t;lf lkgi lk ktoiygolm 5ok hjkntb,wj09 wikn kluiet gnkvweh khiqui32n mni548mt/p[3904 5,o 94i3, to i4tnbv,nkfn oioi. . .m/.m p9w . widthjkheklwn ,jkhjm oie opewke.wm ;lwiop4m9n jjn m  mfj kay98e3e ,lw  oiw./ ;iou nkwmnufgm s p i, , mohjsb d].</p>
+            </div>
+            <hr>
+            <h2>Our Mision</h2>
+            <p>j3rkm,.23u poi3oi4kr 2985lm tgoklcm, c;dlt-0y,5 o8wugbrk,mdc[2o, ṭflikwn c dlkn4w ;ham 059 u5 t;lf lkgi lk ktoiygolm 5ok hjkntb,wj09 wikn kluiet gnkvweh khiqui32n mni548mt/p[3904 5,o 94i3, to i4tn kqj, [3, .g,vnih3nrm uki4 khrfb mds mkwnbn mnmnekrtjigjn m,u40eirkm, dlkqkr0-483jm kier ne</p>
+
+        </div>
+      </div>
+      <hr>
+      <div class="feed">
+        <h2>Write a Feedback</h2>
+        <div class="feed_form">
+           <form name="submit-googlesheet" method="post">
+              <input type="text" name="Name" placeholder="Name"><br>
+              <input type="email" name="Email" placeholder="Email ID"><br>
+              <input type="number" name="Number" placeholder="Contact Number"><br>
+              <textarea rows="5" cols="7" name="Review" placeholder="Write your Review"></textarea>
+              <button type="submit">Submit</button>
+           </form>
+        </div>
+     </div>
+    <hr>
+    <footer>
+        <div class="footer_logo">
+            <a href="index.html"><img src="hotellogo.png" width="130"></a>
+     </div>
+     <div class="pages">
+        <h3>Pages</h3>
+        <a href="#">About Us</a> |
+        <a href="#">Services</a> |
+        <a href="#">Blogs</a> |
+        <a href="#">Contact Us</a> |
+        <a href="#">Login/sign Up</a>
+     </div>
+     <div class="doc">
+        <h3>Documents</h3>
+        <a href="">Privacy Policy</a> |
+        <a href="">Terms of Use</a> |
+        <a href="">Refund Policy</a>
+     </div>
+     <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/ImperialDelhi" target="_black"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/imperialdelhi/?hl=en" target="_black"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/company/the-imperial-hotel" target="_black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/imperialdelhi" target="_black"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+     </div>
+     <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://api.WhatsApp.com/send?phone= +917642856723" target="_black"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="tel: +917642856723"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto: theimperialindia@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+     </div>
+  <hr>
+   <p> Copywrite &copy; 2022 1stop. All rights reserved.</p>  
+  </footer>
+  <script type="text/javascript">
+           const scriptURL = 'https://script.google.com/macros/s/AKfycbyDlfVTqYZXkIalkb74X4m0jX8WlGUp6h3gWFTFK6ztk5FTT-E8jLX9JDLzw8S6etls8g/exec'
+           const form = document.forms['submit-googlesheet']
+         
+           form.addEventListener('submit', e => {
+             e.preventDefault()
+             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+               .then(response => console.log('Thanks for contacting us...! We will get back to you soon.', response))
+               .catch(error => console.error('Error!', error.message))
+           })
+  </script>
+  </body>     
+  
+</html>
